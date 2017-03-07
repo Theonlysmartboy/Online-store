@@ -36,8 +36,8 @@
     <body>
         <section>
             <div class="jumbotron">
-                <div class="container">
-                    <h1> ${greeting} </h1>
+                <div class="container well" style="border-color: #9999ff;">
+                    <h1 class="text-center" style="color: #000033;"> ${greeting} </h1>
                     <p> ${tagline} </p>
                 </div>
             </div>
