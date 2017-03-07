@@ -34,11 +34,11 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
     </head>
     <body>
-        <section>
+        <section style="margin-top: -45px;">
             <div class="jumbotron">
                 <div class="container well" style="border-color: #9999ff;">
-                    <h1 class="text-center" style="color: #000033;"> ${greeting} </h1>
-                    <p> ${tagline} </p>
+                    <h1 class="text-center" style="color: #000033; font-family: Merriweather Sans-serif;"> ${greeting} </h1>
+                    <h3 class="text-center"> ${tagline} </h3>
                 </div>
             </div>
         </section>
