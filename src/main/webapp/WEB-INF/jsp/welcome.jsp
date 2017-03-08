@@ -37,8 +37,7 @@
         <section style="margin-top: -45px;">
             <div class="jumbotron">
                 <div class="container well" style="border-color: #9999ff;">
-                    <canvas id="canvas" width="400" height="400"style="float: right; font-family: Merriweather monospace; font-size: 12px; font-style: italic; background-color: #000033; color: #ffffff;"> </canvas>
-                    <h4 class="text-primary" style=""> ${time}</h4>
+                    <canvas id="clock" height="100" width="100"style="margin-right: -20px; margin-top: -21px; float: right; background-color: transparent;"> </canvas>
                     <h1 class="text-center" style="color: #000033; font-family: Merriweather Sans-serif;"> ${greeting} </h1>
                     <h3 class="text-center"> ${tagline} </h3>
 
@@ -46,7 +45,7 @@
             </div>
         </section>
         <script>
-            var canvas = document.getElementById("canvas");
+            var canvas = document.getElementById("clock");
             var ctx = canvas.getContext("2d");
             var radius = canvas.height / 2;
             ctx.translate(radius, radius);
