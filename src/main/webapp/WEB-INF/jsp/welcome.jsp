@@ -13,7 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
         <link rel="stylesheet"href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-        <title>|Welcome</title>
+        <title>Home|Welcome</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto|Roboto+Slab" rel="stylesheet"> 
 
@@ -63,10 +63,13 @@
             .navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-top-color: #FFFFFF;}
             .navbar-inverse .navbar-nav>.dropdown>a .caret { border-bottom-color: #999999;}
             .navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #FFFFFF;}
+            .header{
+                float: top;
+            }
         </style>
     </head>
     <body>
-        <section style="margin-top: -45px; height: auto;" class="container-fluid">
+        <div class="header">
             <div class="jumbotron">
                 <div class="container well">
                     <canvas id="clock" height="100" width="100"style="margin-right: -20px; margin-top: -21px; float: right; background-color: transparent;"> </canvas>
@@ -74,7 +77,7 @@
                     <h3 class="text-center"> ${tagline} </h3>
                 </div>
             </div>
-        </section>
+        </div>
         <section class="navigation">
             <div class="navbar navbar-inverse navbar-static-top my-navbar" data-spy="affix" data-offset-top="197">
                 <div class="container">
@@ -93,81 +96,114 @@
                 </div>
             </div>
         </section>
-        <script>
-            var canvas = document.getElementById("clock");
-            var ctx = canvas.getContext("2d");
-            var radius = canvas.height / 2;
-            ctx.translate(radius, radius);
-            radius = radius * 0.90;
-            setInterval(drawClock, 1000);
-            function drawClock() {
-                drawFace(ctx, radius);
-                drawNumbers(ctx, radius);
-                drawTime(ctx, radius);
+        <div class="container well">
+            <div class="rows">
+                <div class="col-md-4 well">
+                    <p><b>Welcome to Maseno University Ethics Review Committee online submission system</b></p><p>
+                        This system allows Investigators to submit their proposals/protocols/projects electronically.
+                        <br> Investigators can follow their proposals/protocols/projects’ progress through the review process.</p>
+                    <p><b class="bg-note">New users:</b> Please click <a href="pages/register_user.php">Register Now</a> and enter the requested information. Upon successful registration, you will be sent an email with instructions and your log-in information.</p>
+                    <p><b class="bg-note">Existing users:</b> Do not register again. Simply enter your username and password and click the Investigator log in button. If you have forgotten your details please click <a href="password_reset.php">Forgot Password.</a></p>
+                    <p><b class="bg-note"> </b> 
+                </div>
+                <div class="col-md-8 well">
+                    <form action="pages/process1.php" method="post" accept-charset="UTF-8">
+                        <div class="form-group">
+                            <label for="username">User Name/Email</label>
+                            <input type="email" name="username" class="form-control" id="username" placeholder="user name/email" autocomplete="on">
+                        </div>
+                        <div class="form-group">
+                            <label for="userPassword">Password</label>
+                            <input type="password" name="password" class="form-control" id="userPassword" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="form-control btn-primary" id="login" value="Login">
+                            <label for="forgotpassword"><a href="pages/ForgotPassword.php">Forgot Password?</a></label>
+                        </div>
+                </div>
+            </div>
+        </div>
+      <section>
+        <div class="container-fluid well">
+            <p style="float:left;">All rights reserved © otema ${year}</p>
+            <p style="float: right;"> This page was created dynamically using Java on ${time}</p>
+        </div>
+    </section>
+    <script>
+        var canvas = document.getElementById("clock");
+        var ctx = canvas.getContext("2d");
+        var radius = canvas.height / 2;
+        ctx.translate(radius, radius);
+        radius = radius * 0.90;
+        setInterval(drawClock, 1000);
+        function drawClock() {
+            drawFace(ctx, radius);
+            drawNumbers(ctx, radius);
+            drawTime(ctx, radius);
+        }
+        function drawFace(ctx, radius) {
+            var grad;
+            ctx.beginPath();
+            ctx.arc(0, 0, radius, 0, 2 * Math.PI);
+            ctx.fillStyle = 'white';
+            ctx.fill();
+            grad = ctx.createRadialGradient(0, 0, radius * 0.95, 0, 0, radius * 1.05);
+            grad.addColorStop(0, '#9999ff');
+            grad.addColorStop(0.5, 'Blue');
+            grad.addColorStop(1, '#9999ff');
+            ctx.strokeStyle = grad;
+            ctx.lineWidth = radius * 0.1;
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(0, 0, radius * 0.1, 0, 2 * Math.PI);
+            ctx.fillStyle = '#000033';
+            ctx.fill();
+        }
+        function drawNumbers(ctx, radius) {
+            var ang;
+            var num;
+            ctx.font = radius * 0.15 + "px arial";
+            ctx.textBaseline = "middle";
+            ctx.textAlign = "center";
+            for (num = 1; num < 13; num++) {
+                ang = num * Math.PI / 6;
+                ctx.rotate(ang);
+                ctx.translate(0, -radius * 0.85);
+                ctx.rotate(-ang);
+                ctx.fillText(num.toString(), 0, 0);
+                ctx.rotate(ang);
+                ctx.translate(0, radius * 0.85);
+                ctx.rotate(-ang);
             }
-            function drawFace(ctx, radius) {
-                var grad;
-                ctx.beginPath();
-                ctx.arc(0, 0, radius, 0, 2 * Math.PI);
-                ctx.fillStyle = 'white';
-                ctx.fill();
-                grad = ctx.createRadialGradient(0, 0, radius * 0.95, 0, 0, radius * 1.05);
-                grad.addColorStop(0, '#9999ff');
-                grad.addColorStop(0.5, 'Blue');
-                grad.addColorStop(1, '#9999ff');
-                ctx.strokeStyle = grad;
-                ctx.lineWidth = radius * 0.1;
-                ctx.stroke();
-                ctx.beginPath();
-                ctx.arc(0, 0, radius * 0.1, 0, 2 * Math.PI);
-                ctx.fillStyle = '#000033';
-                ctx.fill();
-            }
-            function drawNumbers(ctx, radius) {
-                var ang;
-                var num;
-                ctx.font = radius * 0.15 + "px arial";
-                ctx.textBaseline = "middle";
-                ctx.textAlign = "center";
-                for (num = 1; num < 13; num++) {
-                    ang = num * Math.PI / 6;
-                    ctx.rotate(ang);
-                    ctx.translate(0, -radius * 0.85);
-                    ctx.rotate(-ang);
-                    ctx.fillText(num.toString(), 0, 0);
-                    ctx.rotate(ang);
-                    ctx.translate(0, radius * 0.85);
-                    ctx.rotate(-ang);
-                }
-            }
-            function drawTime(ctx, radius) {
-                var now = new Date();
-                var hour = now.getHours();
-                var minute = now.getMinutes();
-                var second = now.getSeconds();
-                //hour
-                hour = hour % 12;
-                hour = (hour * Math.PI / 6) +
-                        (minute * Math.PI / (6 * 60)) +
-                        (second * Math.PI / (360 * 60));
-                drawHand(ctx, hour, radius * 0.5, radius * 0.07);
-                //minute
-                minute = (minute * Math.PI / 30) + (second * Math.PI / (30 * 60));
-                drawHand(ctx, minute, radius * 0.8, radius * 0.07);
-                // second
-                second = (second * Math.PI / 30);
-                drawHand(ctx, second, radius * 0.9, radius * 0.02);
-            }
-            function drawHand(ctx, pos, length, width) {
-                ctx.beginPath();
-                ctx.lineWidth = width;
-                ctx.lineCap = "round";
-                ctx.moveTo(0, 0);
-                ctx.rotate(pos);
-                ctx.lineTo(0, -length);
-                ctx.stroke();
-                ctx.rotate(-pos);
-            }
-        </script>
-    </body>
+        }
+        function drawTime(ctx, radius) {
+            var now = new Date();
+            var hour = now.getHours();
+            var minute = now.getMinutes();
+            var second = now.getSeconds();
+            //hour
+            hour = hour % 12;
+            hour = (hour * Math.PI / 6) +
+                    (minute * Math.PI / (6 * 60)) +
+                    (second * Math.PI / (360 * 60));
+            drawHand(ctx, hour, radius * 0.5, radius * 0.07);
+            //minute
+            minute = (minute * Math.PI / 30) + (second * Math.PI / (30 * 60));
+            drawHand(ctx, minute, radius * 0.8, radius * 0.07);
+            // second
+            second = (second * Math.PI / 30);
+            drawHand(ctx, second, radius * 0.9, radius * 0.02);
+        }
+        function drawHand(ctx, pos, length, width) {
+            ctx.beginPath();
+            ctx.lineWidth = width;
+            ctx.lineCap = "round";
+            ctx.moveTo(0, 0);
+            ctx.rotate(pos);
+            ctx.lineTo(0, -length);
+            ctx.stroke();
+            ctx.rotate(-pos);
+        }
+    </script>
+</body>
 </html>
