@@ -13,7 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
         <link rel="stylesheet"href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-        <title>Welcome</title>
+        <title>|Welcome</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto|Roboto+Slab" rel="stylesheet"> 
 
@@ -34,62 +34,65 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
         <style>
             .affix {
-    top: 0;
-    width: 100%;
-}
-
-.affix {
-    padding-top: 70px;
-}
-.navbar-inverse { background-color: #000033;}
-.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { background-color: #036113;}
-.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { background-color: #F2070F;}
-.dropdown-menu { background-color: #FFFFFF;}
-.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-color: #0613CA;}
-.navbar-inverse { background-image: none; }
-.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-image: none; }
-.navbar-inverse { border-color: #008800;}
-.navbar-inverse .navbar-brand { color: #999999;}
-.navbar-inverse .navbar-brand:hover { color: #036113;}
-.navbar-inverse .navbar-nav>li>a { color: #999999;}
-.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { color: #FFFFFF;}
-.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { color: #FFFFFF;}
-.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { color: #FFFFFF;}
-.dropdown-menu>li>a { color: #333333;}
-.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { color: #FFFFFF;}
-.navbar-inverse .navbar-nav>.dropdown>a .caret { border-top-color: #999999;}
-.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-top-color: #FFFFFF;}
-.navbar-inverse .navbar-nav>.dropdown>a .caret { border-bottom-color: #999999;}
-.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #FFFFFF;}
+                top: 0;
+                width: 100%;
+            }
+            .affix {
+                padding-top: 70px;
+            }
+            .navigation{
+                margin-top: -100px;
+            }
+            .navbar-inverse { background-color: #000033;}
+            .navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { background-color: #036113;}
+            .navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { background-color: #F2070F;}
+            .dropdown-menu { background-color: #FFFFFF;}
+            .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-color: #0613CA;}
+            .navbar-inverse { background-image: none; }
+            .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-image: none; }
+            .navbar-inverse { border-color: #008800;}
+            .navbar-inverse .navbar-brand { color: #999999; font-family: Merriweather Sans-serif;}
+            .navbar-inverse .navbar-brand:hover { color: #036113;}
+            .navbar-inverse .navbar-nav>li>a { color: #999999;}
+            .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { color: #FFFFFF;}
+            .navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { color: #FFFFFF;}
+            .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { color: #FFFFFF;}
+            .dropdown-menu>li>a { color: #333333;}
+            .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { color: #FFFFFF;}
+            .navbar-inverse .navbar-nav>.dropdown>a .caret { border-top-color: #999999;}
+            .navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-top-color: #FFFFFF;}
+            .navbar-inverse .navbar-nav>.dropdown>a .caret { border-bottom-color: #999999;}
+            .navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #FFFFFF;}
         </style>
     </head>
     <body>
-        <section style="margin-top: -45px; height: 200px;" class="container-fluid">
+        <section style="margin-top: -45px; height: auto;" class="container-fluid">
             <div class="jumbotron">
                 <div class="container well">
                     <canvas id="clock" height="100" width="100"style="margin-right: -20px; margin-top: -21px; float: right; background-color: transparent;"> </canvas>
                     <h1 class="text-center" style="color: #000033; font-family: Merriweather Sans-serif;"> ${greeting} </h1>
                     <h3 class="text-center"> ${tagline} </h3>
-
                 </div>
             </div>
         </section>
-                <div class="navbar navbar-inverse navbar-static-top my-navbar" data-spy="affix" data-offset-top="197">
-            <div class="container">
-                <a href="https://www.facebook.com/O2JOSE" class="navbar-brand">Otema </a>
-                <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <div class="collapse navbar-collapse navHeaderCollapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="#">Contact us</a></li>
-                    </ul>
+        <section class="navigation">
+            <div class="navbar navbar-inverse navbar-static-top my-navbar" data-spy="affix" data-offset-top="197">
+                <div class="container">
+                    <a href="https://www.facebook.com/O2JOSE" class="navbar-brand">Otema </a>
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="collapse navbar-collapse navHeaderCollapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            </div>
+        </section>
         <script>
             var canvas = document.getElementById("clock");
             var ctx = canvas.getContext("2d");
@@ -97,13 +100,11 @@
             ctx.translate(radius, radius);
             radius = radius * 0.90;
             setInterval(drawClock, 1000);
-
             function drawClock() {
                 drawFace(ctx, radius);
                 drawNumbers(ctx, radius);
                 drawTime(ctx, radius);
             }
-
             function drawFace(ctx, radius) {
                 var grad;
                 ctx.beginPath();
@@ -122,7 +123,6 @@
                 ctx.fillStyle = '#000033';
                 ctx.fill();
             }
-
             function drawNumbers(ctx, radius) {
                 var ang;
                 var num;
@@ -140,7 +140,6 @@
                     ctx.rotate(-ang);
                 }
             }
-
             function drawTime(ctx, radius) {
                 var now = new Date();
                 var hour = now.getHours();
@@ -159,7 +158,6 @@
                 second = (second * Math.PI / 30);
                 drawHand(ctx, second, radius * 0.9, radius * 0.02);
             }
-
             function drawHand(ctx, pos, length, width) {
                 ctx.beginPath();
                 ctx.lineWidth = width;
