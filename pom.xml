@@ -27,7 +27,7 @@
             <artifactId>spring-webmvc</artifactId>
             <version>4.3.4.RELEASE</version>
         </dependency>
-        <!--STL dependency-->
+        <!--JSTL dependency-->
         <dependency>
             <groupId>javax.servlet.jsp.jstl</groupId>
             <artifactId>javax.servlet.jsp.jstl-api</artifactId>
