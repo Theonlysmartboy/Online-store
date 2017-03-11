@@ -4,14 +4,7 @@
 */
 
 //navbar
-.affix {
-    top: 0;
-    width: 100%;
-}
-.affix {
-    padding-top: 70px;
-}
-.navigation{
+   .navigation{
     margin-top: -100px;
 }
 .navbar-inverse { 
@@ -73,4 +66,10 @@
 }
 .navbar-inverse .navbar-nav>.dropdown>a:hover .caret {
     border-bottom-color: #FFFFFF;
+}
+.clock{
+    margin-right: -20px; 
+    margin-top: -21px;
+    float: right;
+    background-color: #036113;
 }
