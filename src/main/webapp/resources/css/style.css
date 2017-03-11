@@ -73,3 +73,8 @@
     float: right;
     background-color: #036113;
 }
+.image-medium{
+    width: 150px;
+    height: 150px;
+    margin-top: -65px;
+}
