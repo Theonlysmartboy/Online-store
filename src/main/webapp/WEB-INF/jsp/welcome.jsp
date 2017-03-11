@@ -16,6 +16,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
         <link rel="stylesheet"href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
         <title>Home|Welcome</title>
+        <link rel="shortcut icon" href="/resources/images/logo.png" type="image/x-icon"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto|Roboto+Slab" rel="stylesheet"> 
         <link rel="stylesheet" href="<c:url value="/resources/css/style.css" />"></script>
@@ -46,19 +47,15 @@
         </style>       
 </head>
     <body>
-        <div class="header">
-            <div class="jumbotron">
-                <div class="container well">
-                    <canvas id="clock" height="100" width="100" class="clock"> </canvas>
+        <div class="container well">
+                         <canvas id="clock" height="100" width="100" class="clock"> </canvas>
                     <h1 class="text-center" style="color: #000033; font-family: Merriweather Sans-serif;"> ${greeting} </h1>
                     <h3 class="text-center"> ${tagline} </h3>
-                </div>
-            </div>
-        </div>
-        <section class="navigation">
+                            </div>
+                <section class="navigation">
             <div class="navbar navbar-inverse navbar-static-top my-navbar" data-spy="affix" data-offset-top="197">
                 <div class="container">
-                    <a href="https://www.facebook.com/O2JOSE" class="navbar-brand">Otema </a>
+                    <a href="https://www.facebook.com/O2JOSE" class="navbar-brand"><image src="<c:url value="/resources/images/logo.png" />" alt="Otema" class="image-responsive image-medium"/> </a>
                     <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
