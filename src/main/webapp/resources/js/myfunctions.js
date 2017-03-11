@@ -3,6 +3,7 @@
  * No part of it whatsoever shall be shared or used unless under written permission by Otema
  * A breech of this may lead to prosecution.
  */
+
 var canvas = document.getElementsByClassName("clock");
             var ctx = canvas.getContext("2d");
             var radius = canvas.height / 2;
@@ -77,3 +78,4 @@ var canvas = document.getElementsByClassName("clock");
                 ctx.stroke();
                 ctx.rotate(-pos);
             }
+        
