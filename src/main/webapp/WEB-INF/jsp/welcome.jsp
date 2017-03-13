@@ -103,7 +103,7 @@
             <p style="float: right;"> This page was created dynamically using Java on ${time}</p>
         </div>
     </section>
-    <!--script>
+    <script>
         var canvas = document.getElementById("clock");
         var ctx = canvas.getContext("2d");
         var radius = canvas.height / 2;
@@ -178,6 +178,6 @@
             ctx.stroke();
             ctx.rotate(-pos);
         }
-    </script-->
+    </script>
 </body>
 </html>
