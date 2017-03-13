@@ -72,7 +72,7 @@
     <div class="container well">
         <div class="rows">
             <div class="col-md-4 well">
-                <p><b>Welcome to </b></p><p>
+                <p><b>Welcome to  </b></p><p>
                     This system allows Investigators to submit their proposals/protocols/projects electronically.
                     <br> Investigators can follow their proposals/protocols/projects’ progress through the review process.</p>
                 <p><b class="bg-note">New users:</b> Please click <a href="">Register Now</a> and enter the requested information. Upon successful registration, you will be sent an email with instructions and your log-in information.</p>
