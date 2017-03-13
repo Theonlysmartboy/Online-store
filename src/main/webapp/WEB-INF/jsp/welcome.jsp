@@ -72,7 +72,7 @@
     </section>
     <div class="container well">
         <div class="rows">
-            <div class="col-md-4 well">
+            <div class="col-md-3 well">
                 <p><b>Welcome to  </b></p><p>
                     This system allows Investigators to submit their proposals/protocols/projects electronically.
                     <br> Investigators can follow their proposals/protocols/projects’ progress through the review process.</p>
@@ -80,7 +80,10 @@
                 <p><b class="bg-note">Existing users:</b> Do not register again. Simply enter your username and password and click the Investigator log in button. If you have forgotten your details please click <a href="">Forgot Password.</a></p>
                 <p><b class="bg-note"> </b> 
             </div>
-            <div class="col-md-8 well">
+            <div class="col-md-6 well">
+                
+            </div>
+                <div class="col-md-3 well"
                 <form action="pages/process1.php" method="post" accept-charset="UTF-8" id="login" style="display:none;">
                     <div class="form-group">
                         <label for="username">User Name/Email</label>
