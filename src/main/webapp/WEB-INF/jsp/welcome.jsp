@@ -62,7 +62,8 @@
                 </button>
                 <div class="collapse navbar-collapse navHeaderCollapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="active"><a href="welcome.jsp">Home</a></li>
+                        <li><a href="#" onclick="displayLogin()">Login</a>
                         <li><a href="#">Contact us</a></li>
                     </ul>
                 </div>
@@ -80,7 +81,7 @@
                 <p><b class="bg-note"> </b> 
             </div>
             <div class="col-md-8 well">
-                <form action="pages/process1.php" method="post" accept-charset="UTF-8">
+                <form action="pages/process1.php" method="post" accept-charset="UTF-8" id="login" style="display:none;">
                     <div class="form-group">
                         <label for="username">User Name/Email</label>
                         <input type="email" name="username" class="form-control" id="username" placeholder="user name/email" autocomplete="on">
@@ -102,7 +103,7 @@
             <p style="float: right;"> This page was created dynamically using Java on ${time}</p>
         </div>
     </section>
-    <script>
+    <!--script>
         var canvas = document.getElementById("clock");
         var ctx = canvas.getContext("2d");
         var radius = canvas.height / 2;
@@ -177,6 +178,6 @@
             ctx.stroke();
             ctx.rotate(-pos);
         }
-    </script>
+    </script-->
 </body>
 </html>
