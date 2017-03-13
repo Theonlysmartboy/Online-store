@@ -4,7 +4,7 @@
  * A breech of this may lead to prosecution.
  */
 
-var canvas = document.getElementsByClassName("clock");
+var canvas = document.getElementsById('clock');
 var ctx = canvas.getContext("2d");
 var radius = canvas.height / 2;
 ctx.translate(radius, radius);
@@ -78,4 +78,6 @@ function drawHand(ctx, pos, length, width) {
     ctx.stroke();
     ctx.rotate(-pos);
 }
-        
+        function displayLogin(){
+            document.getElementById('login').style.display="block";
+        }
