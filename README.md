@@ -1,5 +1,6 @@
 # Online-store
-
+This is a jsp spring project that i used to learn the spring framework,
+The system is generally an online store for displaying and selling products
 
 #Technologies and freameworks Used include
 Bootstrap,
