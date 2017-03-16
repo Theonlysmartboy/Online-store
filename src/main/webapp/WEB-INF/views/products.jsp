@@ -60,8 +60,8 @@
     </section>
     <section>
         <div class="container-fluid well">
-            <p style="float:left;">All rights reserved © otema ${year}</p>
-            <p style="float: right;"> This page was created dynamically using Java on ${time}</p>
+            <p style="float:left;">${copyrightyear}</p>
+            <p style="float: right;">${loadtime}</p>
         </div>
     </section>
 </body>
