@@ -8,7 +8,7 @@ import java.util.Date;
 
 /**
  *
- * @author Maseno
+ * @author Otema
  */
 @Controller
 public class HomeController {
