@@ -1,7 +1,7 @@
 <%-- 
     Document   : welcome
     Created on : Mar 7, 2017, 6:58:30 PM
-    Author     : Maseno
+    Author     : Otema
 --%>
 
 <%@page language="java" contentType="text/html" pageEncoding="UTF-8"%>
