@@ -32,7 +32,7 @@ public class ProductController {
         SimpleDateFormat tf = new SimpleDateFormat("yyy");
         model.addAttribute("product", iphone);
         model.addAttribute("loadtime", "This page was created dynamically using Java on " + ft.format(today));
-        model.addAttribute("copyrightyear", "All rights reserved © otema " + tf.format(today));
+        model.addAttribute("copyrightyear", "All rights reserved © " + tf.format(today) + " Otema");
         return "products";
     }
 }
