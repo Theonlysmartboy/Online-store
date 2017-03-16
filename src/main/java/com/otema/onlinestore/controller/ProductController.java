@@ -27,10 +27,16 @@ public class ProductController {
         iphone.setCategory("Smart Phone");
         iphone.setManufacturer("Apple");
         iphone.setUnitsInStock(1000);
+        Product tecno = new Product("T1234", "Tecno L8", new BigDecimal(600));
+        tecno.setDescription("Tecno L8 smartphone with 4.00-inch 640x1136 display, 2Gb RAM 16Gb, ROM 8-megapixel rear camera and boom player");
+        tecno.setCategory("Smart Phone");
+        tecno.setManufacturer("Tecno Inc");
+        tecno.setUnitsInStock(80);
         Date today = new Date();
         SimpleDateFormat ft = new SimpleDateFormat("E dd MMM yyy 'at' hh:mm:ss a zzz");
         SimpleDateFormat tf = new SimpleDateFormat("yyy");
         model.addAttribute("product", iphone);
+        model.addAttribute("product1", tecno);
         model.addAttribute("loadtime", "This page was created dynamically using Java on " + ft.format(today));
         model.addAttribute("copyrightyear", "All rights reserved © " + tf.format(today) + " Otema");
         return "products";
