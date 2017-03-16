@@ -27,12 +27,12 @@ public class ProductController {
         iphone.setCategory("Smart Phone");
         iphone.setManufacturer("Apple");
         iphone.setUnitsInStock(1000);
-        model.addAttribute("product", iphone);
         Date today = new Date();
         SimpleDateFormat ft = new SimpleDateFormat("E dd MMM yyy 'at' hh:mm:ss a zzz");
         SimpleDateFormat tf = new SimpleDateFormat("yyy");
-        model.addAttribute("time", ft.format(today));
-        model.addAttribute("year", tf.format(today));
+        model.addAttribute("product", iphone);
+        model.addAttribute("loadtime", "This page was created dynamically using Java on " + ft.format(today));
+        model.addAttribute("copyrightyear", "All rights reserved © otema " + tf.format(today));
         return "products";
     }
 }
