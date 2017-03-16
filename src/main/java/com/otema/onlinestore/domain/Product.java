@@ -30,10 +30,7 @@ private String condition;
     this.name = name;
     this.unitPrice = unitPrice;
   }
-  public void setProductId(String productId){
-      this.productId = productId;
-  }
-  
+    
   @Override
   public boolean equals(Object obj) {
     if (this == obj)
