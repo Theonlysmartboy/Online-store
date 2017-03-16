@@ -13,7 +13,7 @@ import com.otema.onlinestore.domain.Product;
 
 /**
  *
- * @author Maseno
+ * @author Otema
  */
 @Controller
 public class ProductController {
