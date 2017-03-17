@@ -39,8 +39,28 @@
     <section>
         <div class="jumbotron">
             <div class="container">
-                <h1>Products</h1>
-                <p>All the available products in our store</p>
+                <h1 class="text-center">Products</h1>
+                <h3 class="text-center">All the available products in our store</h3>
+            </div>
+        </div>
+    </section>
+     <section class="navigation">
+        <div class="navbar navbar-inverse navbar-static-top my-navbar" data-spy="affix" data-offset-top="197">
+            <div class="container">
+                <a href="https://www.facebook.com/O2JOSE" class="navbar-brand"><image src="<c:url value="/resources/images/logo.png" />" alt="Otema" class="image-responsive image-medium"/> </a>
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse navHeaderCollapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="welcome.jsp">Home</a></li>
+                        <li class="active"><a href="">Products</a></li>
+                        <li><a href="#" onclick="displayLogin()">Login</a>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
