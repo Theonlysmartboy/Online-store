@@ -14,7 +14,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet"href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-        <link rel="shortcut icon" href="/resources/images/logo.png" type="image/x-icon"/>
+        <link rel="shortcut icon" href="<c:url value="/resources/images/logo.png" />" type="image/x-icon"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto|Roboto+Slab" rel="stylesheet"> 
         <link rel="stylesheet" href="<c:url value="/resources/css/style.css" />"></script>
@@ -41,7 +41,7 @@
             <h1 class="text-center" style="color: #000033; font-family: Merriweather Sans-serif;">Products</h1>
             <h3 class="text-center">All the available products in our store</h3>
         </div>
-    </section>
+          </section>
     <section class="navigation">
         <div class="navbar navbar-inverse navbar-static-top my-navbar" data-spy="affix" data-offset-top="197">
             <div class="container">
