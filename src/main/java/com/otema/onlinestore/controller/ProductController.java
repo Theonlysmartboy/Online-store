@@ -5,11 +5,9 @@
  */
 package com.otema.onlinestore.controller;
 
-import java.math.BigDecimal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import com.otema.onlinestore.domain.Product;
 import com.otema.onlinestore.domain.repository.ProductRepository;
 import java.text.SimpleDateFormat;
 import java.util.Date;
