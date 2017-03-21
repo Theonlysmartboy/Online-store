@@ -14,7 +14,7 @@ import com.otema.onlinestore.domain.repository.ProductRepository;
 @Repository
 public class InMemoryProductRepository implements ProductRepository {
 
-    private final List<Product> listOfProducts = new ArrayList<Product>();
+    private final List<Product> listOfProducts = new ArrayList<>();
 
     public InMemoryProductRepository() {
         Product iphone = new Product("P1234", "iPhone 5s", new BigDecimal(500));
