@@ -37,14 +37,12 @@
 </head>
 <body>
     <section>
-        <div class="jumbotron">
-            <div class="container">
-                <h1 class="text-center">Products</h1>
-                <h3 class="text-center">All the available products in our store</h3>
-            </div>
+        <div class="container">
+            <h1 class="text-center" style="color: #000033; font-family: Merriweather Sans-serif;">Products</h1>
+            <h3 class="text-center">All the available products in our store</h3>
         </div>
     </section>
-     <section class="navigation">
+    <section class="navigation">
         <div class="navbar navbar-inverse navbar-static-top my-navbar" data-spy="affix" data-offset-top="197">
             <div class="container">
                 <a href="https://www.facebook.com/O2JOSE" class="navbar-brand"><image src="<c:url value="/resources/images/logo.png" />" alt="Otema" class="image-responsive image-medium"/> </a>
@@ -64,29 +62,21 @@
             </div>
         </div>
     </section>
-       <section>
-      <div class="jumbotron">
-        <div class="container">
-          <h1>Products</h1>
-          <p>All the available products in our store</p>
-        </div>
-      </div>
-    </section>
     <section class="container">
-      <div class="row">
-        <c:forEach items="${products}" var="product">
-          <div class="col-sm-6 col-md-3" style="padding-bottom: 15px">
-            <div class="thumbnail">
-              <div class="caption">
-                <h3>${product.name}</h3>
-                <p>${product.description}</p>
-                <p>$${product.unitPrice}</p>
-                <p>Available ${product.unitsInStock} units in stock</p>
-              </div>
-            </div>
-          </div>
-        </c:forEach>
-      </div>
+        <div class="row">
+            <c:forEach items="${products}" var="product">
+                <div class="col-sm-6 col-md-3" style="padding-bottom: 15px">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <h3>${product.name}</h3>
+                            <p>${product.description}</p>
+                            <p>$${product.unitPrice}</p>
+                            <p>Available ${product.unitsInStock} units in stock</p>
+                        </div>
+                    </div>
+                </div>
+            </c:forEach>
+        </div>
     </section>
     <section>
         <div class="container-fluid well">
