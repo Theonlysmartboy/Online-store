@@ -4,5 +4,10 @@
  * A breech of this may lead to prosecution.
  */
  function displayLogin(){
-            document.getElementById('login').style.display="block";
+     if(document.getElementById('login').style.display === "none"){
+          document.getElementById('login').style.display="block";
+     }
+           else{
+               document.getElementById('login').style.display = "none";
+           }
         }
