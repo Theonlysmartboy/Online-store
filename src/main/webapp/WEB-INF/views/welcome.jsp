@@ -63,7 +63,7 @@
                 <div class="collapse navbar-collapse navHeaderCollapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="welcome.jsp">Home</a></li>
-                        <li><a href="#" onclick="displayLogin()">Login</a>
+                        <li><a href="" onclick="displayLogin()">Login</a>
                         <li><a href="#">Contact us</a></li>
                     </ul>
                 </div>
