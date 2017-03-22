@@ -25,6 +25,7 @@
 
     <!--  JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/e00b541afd.js"></script>
 
@@ -63,6 +64,16 @@
                 <div class="collapse navbar-collapse navHeaderCollapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="welcome.jsp">Home</a></li>
+                        <li class="dropdown">
+                            <a data-target="" href="" data-toggle="dropdown" class="dropdown-toggle">Products <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Education</a></li>
+                                <li><a href="#">Agriculture</a></li>
+                                <li><a href="#">Transport</a></li>
+                                <li><a href="#">Property Management</a></li>
+                                <li><a href="#">Technology</a></li>
+                            </ul>
+                        </li>
                         <li><a href="" onclick="displayLogin()">Login</a>
                         <li><a href="#">Contact us</a></li>
                     </ul>
@@ -81,10 +92,10 @@
                 <p><b class="bg-note"> </b> 
             </div>
             <div class="col-md-6 well">
-                
+
             </div>
-                <div class="col-md-3 well"
-                <form action="pages/process1.php" method="post" accept-charset="UTF-8" id="login" style="display:none;">
+            <div class="col-md-3 well"
+                 <form action="pages/process1.php" method="post" accept-charset="UTF-8" id="login" style="display:none;">
                     <div class="form-group">
                         <label for="username">User Name/Email</label>
                         <input type="email" name="username" class="form-control" id="username" placeholder="user name/email" autocomplete="on">
